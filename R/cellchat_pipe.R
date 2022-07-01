@@ -78,7 +78,7 @@ call_cellchat <- function(sce,
                                         ident.use = "group")
 
     if(.do_parallel){
-        future::plan("multiprocess")
+        future::plan("multicore")
     }
 
     # load CellChatDB
